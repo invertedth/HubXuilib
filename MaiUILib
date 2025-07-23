@@ -10,19 +10,6 @@ local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 local VirtualUser = game:GetService("VirtualUser")
 
--- Original AFK function (keeping as it's separate from UI)
-task.spawn(function()
-pcall(function()
-if game.Placeid = 123456789 then
-if game.Workspace:FindFirstChild("RobloxForwardPortals") then
-game.Workspace.RobloxForwardPortals:Destroy()
-end
-end
--- Removed loadstring for simplicity, as it's external code
--- loadstring(game:HttpGet("https://github.com/isMoons/isMoons/blob/main/adspeedhub.lua"))()
-end)
-end)
-
 local Custom = {} do
 Custom.ColorRGB = Color3.fromRGB(250, 7, 7)
 
